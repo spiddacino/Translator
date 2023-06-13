@@ -4,9 +4,10 @@ import tasks
 
 app = FastAPI()
 
-with open("languages.txt") as f:
-    languages = f.read().split(", ")
+# with open("languages.txt") as f:
+#     languages = f.read().split(", ")
 
+languages = ["English", "French", "German", "Romanian"]
 class Translation(BaseModel):
     text: str
     base_lang: str
